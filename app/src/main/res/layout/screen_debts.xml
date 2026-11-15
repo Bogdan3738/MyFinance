@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@drawable/mf_screen">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Долги" android:textSize="25sp" android:textColor="#F8F3EA" android:textStyle="bold" android:paddingBottom="18dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/mf_card" android:padding="3dp" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:background="@drawable/mf_gold" android:layout_weight="1" android:gravity="center">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Активные" android:textSize="13sp" android:textColor="#251807" android:textStyle="bold" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="История" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Долг Ивану" android:textSize="16sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Остаток: 15 000 ₽   ·   Всего: 50 000 ₽" android:textSize="13sp" android:textColor="#BDB6AB" android:paddingTop="4dp"/>
+            <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="12dp" android:max="100" android:progress="70" android:progressTint="#F1CD86" android:layout_marginTop="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погашено: 35 000 ₽" android:textSize="12sp" android:textColor="#BDB6AB"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Кредит" android:textSize="16sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Остаток: 120 000 ₽   ·   Всего: 200 000 ₽" android:textSize="13sp" android:textColor="#BDB6AB" android:paddingTop="4dp"/>
+            <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="12dp" android:max="100" android:progress="40" android:progressTint="#F1CD86" android:layout_marginTop="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погашено: 80 000 ₽" android:textSize="12sp" android:textColor="#BDB6AB"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Долг родителям" android:textSize="16sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Остаток: 5 000 ₽   ·   Всего: 10 000 ₽" android:textSize="13sp" android:textColor="#BDB6AB" android:paddingTop="4dp"/>
+            <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="12dp" android:max="100" android:progress="50" android:progressTint="#F1CD86" android:layout_marginTop="8dp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погашено: 5 000 ₽" android:textSize="12sp" android:textColor="#BDB6AB"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="＋ Добавить долг" android:textSize="15sp" android:textColor="#251807" android:textStyle="bold" android:background="@drawable/mf_gold" android:gravity="center" android:minHeight="48dp" android:layout_marginTop="7dp" android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

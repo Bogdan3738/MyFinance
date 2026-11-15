@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@drawable/mf_screen">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="История долгов" android:textSize="25sp" android:textColor="#F8F3EA" android:textStyle="bold" android:paddingBottom="18dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_paid" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✓  Долг другу" android:textSize="16sp" android:textColor="#A0D387" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="50 000 ₽" android:textSize="19sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погашен · 20 окт. 2026" android:textSize="13sp" android:textColor="#A0D387"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_paid" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✓  Кредит на технику" android:textSize="16sp" android:textColor="#A0D387" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="35 000 ₽" android:textSize="19sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погашен · 5 сент. 2026" android:textSize="13sp" android:textColor="#A0D387"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_paid" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✓  Долг коллеге" android:textSize="16sp" android:textColor="#A0D387" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="10 000 ₽" android:textSize="19sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Погашен · 12 авг. 2026" android:textSize="13sp" android:textColor="#A0D387"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

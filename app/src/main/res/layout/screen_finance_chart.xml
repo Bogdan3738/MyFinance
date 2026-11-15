@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@drawable/mf_screen">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Диаграмма финансов" android:textSize="25sp" android:textColor="#F8F3EA" android:textStyle="bold" android:paddingBottom="18dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/mf_card" android:padding="3dp" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Неделя" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:background="@drawable/mf_gold" android:layout_weight="1" android:gravity="center">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Месяц" android:textSize="13sp" android:textColor="#251807" android:textStyle="bold" android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Год" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Все счета" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="14dp" android:gravity="center">
+            <LinearLayout android:layout_width="170dp" android:layout_height="170dp" android:orientation="vertical" android:background="@drawable/mf_donut" android:gravity="center">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="70 700 ₽" android:textSize="24sp" android:textColor="#F8F3EA" android:textStyle="bold" android:gravity="center"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Расходы" android:textSize="13sp" android:textColor="#BDB6AB" android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Продукты" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="38%" android:textSize="12sp" android:textColor="#BDB6AB" android:paddingTop="3dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26 870 ₽" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Транспорт" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="14%" android:textSize="12sp" android:textColor="#BDB6AB" android:paddingTop="3dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9 900 ₽" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Кафе и рестораны" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="10%" android:textSize="12sp" android:textColor="#BDB6AB" android:paddingTop="3dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7 070 ₽" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Развлечения" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="9%" android:textSize="12sp" android:textColor="#BDB6AB" android:paddingTop="3dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6 360 ₽" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Другое" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="29%" android:textSize="12sp" android:textColor="#BDB6AB" android:paddingTop="3dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20 500 ₽" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_balance" android:padding="14dp" android:layout_marginBottom="9dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Бюджет: избыточный" android:textSize="16sp" android:textColor="#F1CD86" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Доходы выше расходов на 24 300 ₽" android:textSize="13sp" android:textColor="#BDB6AB"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
