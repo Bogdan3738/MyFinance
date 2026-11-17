@@ -1,70 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@drawable/mf_screen">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@drawable/mf_screen" android:id="@+id/operation_form" android:focusableInTouchMode="true">
     <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Добавить запись" android:textSize="25sp" android:textColor="#F8F3EA" android:textStyle="bold" android:paddingBottom="18dp"/>
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/mf_card" android:padding="3dp" android:layout_marginBottom="12dp">
-            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:background="@drawable/mf_gold" android:layout_weight="1" android:gravity="center">
-                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Доход" android:textSize="13sp" android:textColor="#251807" android:textStyle="bold" android:gravity="center"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:background="@drawable/mf_gold" android:layout_weight="1" android:gravity="center" android:id="@+id/income_type" android:clickable="true" android:focusable="true">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Доход" android:textSize="13sp" android:textColor="#251807" android:textStyle="bold" android:gravity="center" android:id="@+id/income_type_label"/>
             </LinearLayout>
-            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
-                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Расход" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:gravity="center"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="42dp" android:orientation="vertical" android:layout_weight="1" android:gravity="center" android:id="@+id/expense_type" android:clickable="true" android:focusable="true">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Расход" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:gravity="center" android:id="@+id/expense_type_label"/>
             </LinearLayout>
         </LinearLayout>
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сумма" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:paddingBottom="8dp"/>
-        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:background="@drawable/mf_card" android:hint="5 000 ₽" android:inputType="numberDecimal" android:padding="13dp" android:textColor="#F8F3EA" android:textColorHint="#BDB6AB" android:layout_marginBottom="14dp"/>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Тип дохода" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:paddingBottom="8dp"/>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Зарплата" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
-                </LinearLayout>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Подработка" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Инвестиции" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Подарок" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Другое" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp" android:background="@drawable/mf_card" android:hint="0,00 ₽" android:inputType="numberDecimal" android:padding="13dp" android:textColor="#F8F3EA" android:textColorHint="#BDB6AB" android:layout_marginBottom="14dp" android:id="@+id/amount_input" android:maxLength="15" android:digits="0123456789.,"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Тип дохода" android:textSize="13sp" android:textColor="#BDB6AB" android:textStyle="bold" android:paddingBottom="8dp" android:id="@+id/category_heading"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/category_list"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp" android:id="@+id/pick_operation_date" android:clickable="true" android:focusable="true">
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
                     <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Дата" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
                 </LinearLayout>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 нояб. 2026  ›" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp" android:id="@+id/operation_date_value"/>
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/mf_card" android:padding="14dp" android:layout_marginBottom="9dp">
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
-                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
-                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Счёт" android:textSize="15sp" android:textColor="#F8F3EA" android:textStyle="bold"/>
-                </LinearLayout>
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Основной · RUB  ›" android:textSize="14sp" android:textColor="#F1CD86" android:textStyle="bold" android:paddingStart="8dp"/>
-            </LinearLayout>
-        </LinearLayout>
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сохранить" android:textSize="15sp" android:textColor="#251807" android:textStyle="bold" android:background="@drawable/mf_gold" android:gravity="center" android:minHeight="48dp" android:layout_marginTop="7dp" android:layout_marginBottom="12dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Сохранить" android:textSize="15sp" android:textColor="#251807" android:textStyle="bold" android:background="@drawable/mf_gold" android:gravity="center" android:minHeight="48dp" android:layout_marginTop="7dp" android:layout_marginBottom="12dp" android:id="@+id/save_operation" android:clickable="true" android:focusable="true"/>
     </LinearLayout>
 </ScrollView>
